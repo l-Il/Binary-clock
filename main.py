@@ -5,14 +5,15 @@ from tkinter import *
 class Time:
     def __init__(self):
         self.A = [[0] * 6 for _ in range(4)]
+        self.s = ''
         self.root = Tk()
         self.root.title('Clock')
         self.root.geometry('90x90')
         self.root.resizable(False, False)
         self.root.attributes('-topmost', True)
         self.root.overrideredirect(True)
-        self.current = Label(self.root, font=('Consolas', 10), fg='#00FFFF', bg='#202020')
-        self.binary_label = Label(self.root, font=('Consolas', 10), fg='#FFFFFF', bg='#202020')
+        self.current = Label(self.root, font=('Consolas', 10), fg='#00FAFF', bg='#000000')
+        self.binary_label = Label(self.root, font=('Consolas', 10), fg='#FFFFFF', bg='#000000')
         self.current.place(x=0, y=0, width=90)
         self.binary_label.place(x=0, y=20, width=90, height=70)
         self.loop()

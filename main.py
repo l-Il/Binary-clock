@@ -10,6 +10,7 @@ class Time:
         self.root.geometry('90x90')
         self.root.resizable(False, False)
         self.root.attributes('-topmost', True)
+        self.root.overrideredirect(True)
         self.current = Label(self.root, font=('Consolas', 10), fg='#00FFFF', bg='#202020')
         self.binary_label = Label(self.root, font=('Consolas', 10), fg='#FFFFFF', bg='#202020')
         self.current.place(x=0, y=0, width=90)

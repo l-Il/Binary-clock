@@ -1,5 +1,7 @@
 # Binary clock
 Always on screen utility, displaying time both in basic (decimal) form, and in binary.
+
+![](https://github.com/l-Il/Binary-clock/blob/master/explanation1.gif)
 ## Explanation
 This program takes time, and represents each digit in binary form, as shown here:
 
